@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+        font-size: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #3399ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .principal {
+      display: flex;
+      flex: 1;
+    }
+
+    .barra {
+      width: 250px;
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contenido {
+      flex: 1;
+      padding: 20px;
+      background-color: white;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      Flexbox
+    </header>
+
+    <div class="principal">
+      <div class="barra">
+        <h2>Barra Lateral</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, vel! Iste dignissimos doloribus est non adipisci dolor sunt odit laboriosam debitis veniam, fugit dolorem distinctio saepe beatae quia odio iure.</p>
+      </div>
+
+      <div class="contenido">
+        <h2>Contenido</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad cum et error culpa dignissimos, consequuntur aperiam libero quia repellat consectetur, similique labore? Ratione accusamus pariatur libero incidunt dignissimos soluta.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

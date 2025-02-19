@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 250px 1fr 250px;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      padding: 20px;
+      grid-template-areas:
+        "encabezado encabezado encabezado"
+        "barra contenido barra-derecha"
+        "pie pie pie";
+    }
+
+    .encabezado {
+      grid-area: encabezado;
+      background-color: #3399ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .barra {
+      grid-area: barra;
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contenido {
+      grid-area: contenido;
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .barra-derecha {
+      grid-area: barra-derecha;
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bloque {
+      background-color: #f1f1f1;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .bloque img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="encabezado">
+      Grid
+    </div>
+    <div class="barra">
+      <h2>Barra Lateral Izquierda</h2>
+      <p>Contenido</p>
+    </div>
+    <div class="contenido">
+      <h2>Contenido Principal</h2>
+      <div class="bloque">
+        <h3>Título 1</h3>
+        <p>Contenido</p>
+      </div>
+
+      <div class="bloque">
+        <h3>Título 2</h3>
+        <p>Contenido</p>
+      </div>
+    </div>
+
+    <div class="barra-derecha">
+      <h2>Barra Lateral Derecha</h2>
+      <p>Contenido</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

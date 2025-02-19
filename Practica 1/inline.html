@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline Layout</title>
+  <style>
+    body {
+        font-size: 20px;
+    }
+    .container {
+      width: 100%;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .linea{
+      display: inline-block; 
+      width: 20%; 
+      padding: 20px;
+      background-color: #6eca57;
+      margin-right: 5%;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="linea">
+      <h2>Titulo 1</h2>
+      <p>Primer elemento</p>
+    </div>
+    <div class="linea">
+      <h2>Titulo 2</h2>
+      <p>Segundo elemento al lado del primero</p>
+    </div>
+    <div class="linea">
+      <h2>Titulo 3</h2>
+      <p>Tercer elemento alineado al anterior</p>
+    </div>
+  </div>
+</body>
+</html>
