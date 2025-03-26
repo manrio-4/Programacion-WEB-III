@@ -1,0 +1,10 @@
+Los tiempos para cada tipo de conexión son:
+Basic Connection Approach: 4.808ms
+Using the Promises: 6.994ms
+Using the Connection Pooling: 3.86ms
+
+Para una sola consulta la conexión básica es buena
+
+Para un manejo de errores más eficiente y código más limpio, se usa promesas
+
+Y para múltiples consultas concurrentes, se usa pooling
